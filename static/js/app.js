@@ -78,3 +78,46 @@ function optionChanged(newSample) {
   buildCharts(newSample); // Update the bar chart
   buildBubbleChart(newSample); // Update the bubble chart
 }
+// Function to display the sample metadata (demographic information)
+function updateDemographicInfo(sample) {
+    d3.json(url).then(function(data) {
+      // Get the metadata for the selected sample
+      var metadata = data.metadata.filter(obj => obj.id == sample)[0];
+      
+      // Select the panel where metadata will be displayed
+      var metadataPanel = d3.select("#sample-metadata");
+      
+      // Clear any existing metadata
+      metadataPanel.html("");
+      
+      // Iterate through each key-value pair in the metadata
+      Object.entries(metadata).forEach(([key, value]) => {
+        // Append each key-value pair to the panel
+        metadataPanel.append("h6").text(`${key.toUpperCase()}: ${value}`);
+      });
+    });
+  }
+  
+  // Modify the optionChanged function to update demographic information
+  function optionChanged(newSample) {
+    // Update the charts
+    buildCharts(newSample); 
+    buildBubbleChart(newSample); 
+    
+    // Update the demographic information
+    updateDemographicInfo(newSample);
+  }
+  
+  // When the page loads, get the first sample and update charts and demographic information
+  d3.json(url).then(function(data) {
+    // Get the first sample from the dataset
+    const firstSample = data.names[0];
+    
+    // Build the initial charts
+    buildCharts(firstSample);
+    buildBubbleChart(firstSample);
+    
+    // Display the initial demographic information
+    updateDemographicInfo(firstSample);
+  });
+  
