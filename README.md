@@ -25,5 +25,5 @@
 
 <h1 align="center"> On Click Info </h1>
 
-![ezgif-5-789b73d71b](https://github.com/llang777/belly-button-challenge2/assets/146140759/562eea90-b674-4a99-9093-7fa293192fcb)
+![ezgif-7-688ff0f683](https://github.com/llang777/belly-button-challenge2/assets/146140759/2ed64052-1440-4522-8e5e-3f065ce5545a)
 
