@@ -5,8 +5,8 @@
  The code establishes a GitHub Pages site, with interactive features for selecting differing test subjects, and
  analyzes their OTUs. Demographic information, bubble chart, and bar graph are present for each patient number and sample.
 
-  D3 is used to read in the sample data from https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json., then
-  transforms the infomation into interactive visuals on a dashboard style layout.
+  D3, JavaScript, HTML, and CSS are used to read in the sample data from https://static.bc-edx.com/data/dl-1-2/m14/lms/starter/samples.json., then
+  transforms the infomation into interactive visuals on a dashboard style layout. This is an exploratory project.
   
 ![image](https://github.com/llang777/belly-button-challenge2/assets/146140759/31f8a211-b5b8-455d-aad7-852faf24d15d)
 
