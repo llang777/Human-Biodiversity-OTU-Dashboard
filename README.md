@@ -1,5 +1,5 @@
 <h1 align="center"> Belly Button Biodiversity </h1>
-<h1 align="center"> GitHub Pages Site https://llang777.github.io/belly-button-challenge2/ </h1>
+<h1 align="center"> GitHub Pages Site [https://llang777.github.io/belly-button-challenge2/](https://llang777.github.io/Human-Biodiversity-OTU-Dashboard/) </h1>
 
  This repo analyzes Belly Button Biodiversity, focusing on the diverse array of OTUs present in human navels.
  The code establishes a GitHub Pages site, with interactive features for selecting differing test subjects, and
